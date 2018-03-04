@@ -1,0 +1,213 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 10px;
+
+}
+
+.main-container {
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.aboutme {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.education {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.skills {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.employment {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* menu base styles */
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    //margin-right: auto;
+    justify-content: center;
+}
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+/*
+.aboutme{
+    display: flex;
+    felx-direction: row;
+    padding: 10px;
+}
+*/
+
+/* flex styles */
+
+/* -- very small screens */
+@media only screen and (min-width: 460px) {
+    .nav-container {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: 1;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* --- small screens  --- */
+@media only screen and (min-width: 623px) {
+.nav-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul,
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ------ medium screens ----- */
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+    .nav-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        flex: 1;
+    }
+    nav ul,
+    .name {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .aboutme {
+        flex: 1;
+
+    }
+    .education {
+        flex: 1;
+
+    }
+    .skills {
+        flex: 1;
+
+    }
+    .employment {
+        flex: 1;
+    }
+
+}
+
+/*---large screens---*/
+@media only screen and (min-width: 1140px) {
+
+.name {
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+    nav ul,
+    .name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutme {
+        flex: 1;
+
+    }
+
+    .education {
+        flex: 1;
+
+    }
+
+    .skills {
+        flex: 1;
+
+    }
+
+    .employment {
+        flex: 1;
+    }
+}
